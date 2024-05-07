@@ -166,7 +166,7 @@ for (qaq in 1:length(exp_dat_ids)) {
             
             
             
-            #若需运行MR—presso,将最左侧7个#删去即可 
+            
             #         res_presso <- TwoSampleMR::run_mr_presso(dat,
             #                                             NbDistribution = 100)
             # [["MR-PRESSO results"]][["Global Test"]][["Pvalue"]]
@@ -203,8 +203,7 @@ for (qaq in 1:length(exp_dat_ids)) {
             res3 <- res[1:row_number(res),]
             
             
-            
-            # 转换成论文格式
+          
 
             # Main result 
             res4 <- as.data.frame(tidyr::pivot_wider(
