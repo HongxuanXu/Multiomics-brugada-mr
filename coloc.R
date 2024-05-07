@@ -28,10 +28,10 @@ for (qqq in 1 : length(exp_dat_ids)) {
                  values=list(symbol),
                  mart=ensembl)
   if(nrow(range) > 0){
-    
+    #change d1$d2 to your own data
   data1 <- d1 %>% filter(CHROM==range$chromosome_name,GENPOS >= range$start_position-1000000,GENPOS <= range$start_position+1000000)
 
-  data2 <- afc %>% filter(chr==range$chromosome_name,pos >= range$start_position-1000000, pos <= range$start_position+1000000)
+  data2 <- d2 %>% filter(chr==range$chromosome_name,pos >= range$start_position-1000000, pos <= range$start_position+1000000)
 
   data1 <- data1 %>% dplyr::select(SNP, CHROM, GENPOS, ALLELE1, ALLELE0, BETA, A1FREQ,N,SE)
     
