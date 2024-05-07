@@ -43,7 +43,7 @@ FileNames <-list.files(paste0(getwd()),pattern=".txt") #get exposure list for lo
 exp_dat_ids <- FileNames
 exps <- FileNames
 
-dir.create(path = "/Users/xuhongxuan/Documents/brugada/ukb")  #creat results directory
+dir.create(path = "/Users/xuhongxuan/Documents/brugada/ukb")  #create results directory
 
 ####UKBPPP as an example######
 
