@@ -86,8 +86,6 @@ for (qaq in 1:length(exp_dat_ids)) {
         
         skip_to_next <- FALSE
         
-        # Note that print(b) fails since b doesn't exist
-        
         tryCatch(        clump <-  ld_clump_local(dat = tibble(rsid = exp_data$SNP,
                                                                pval = exp_data$pval.exposure),
                                                   clump_r2 = 0.1,
