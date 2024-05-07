@@ -38,8 +38,10 @@ get_f<-function(dat,F_value=10){
     return(dat)
   }
 }
-outcomeid<-fread() #read outcome data into r
-FileNames <-list.files(paste0(getwd()),pattern=".txt") #get exposure list for loop
+
+outcomeid<-fread("your directory") #read outcome data into R
+
+FileNames <- list.files(paste0(getwd()),pattern=".txt") #get exposure list for loop
 exp_dat_ids <- FileNames
 exps <- FileNames
 
